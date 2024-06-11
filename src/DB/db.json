@@ -1,0 +1,142 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "admin",
+      "password": "123",
+      "email": "admin@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "johndoe",
+      "password": "abc123",
+      "email": "johndoe@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "alice",
+      "password": "password123",
+      "email": "alice@example.com"
+    },
+    {
+      "id": "4",
+      "name": "bob",
+      "password": "pass456",
+      "email": "bob@example.com"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "1",
+      "restname": "REST DU PARC",
+      "phone": "123-456-7890",
+      "address": "Media",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "restname": "The Fancy Spoon",
+      "phone": "123-456-7890",
+      "address": "123 Gourmet",
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "restname": "Burger Haven",
+      "phone": "987-654-3210",
+      "address": "456 Fast Food Avenue",
+      "userId": "1"
+    },
+    {
+      "id": "1",
+      "restname": "Rest du parc",
+      "phone": 123456789,
+      "address": "casa casa",
+      "userId": "2"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "categorieName": "Appetizers",
+      "userId": 1,
+      "RestId": 1
+    },
+    {
+      "id": "2",
+      "categorieName": "Main Courses",
+      "userId": 1,
+      "RestId": 1
+    },
+    {
+      "id": "3",
+      "categorieName": "Desserts",
+      "userId": 1,
+      "RestId": 1
+    },
+    {
+      "id": "4",
+      "categorieName": "Burgers",
+      "userId": 3,
+      "RestId": 2
+    },
+    {
+      "id": "5",
+      "categorieName": "Salads",
+      "userId": 3,
+      "RestId": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "itemname": "Spring Rolls",
+      "price": "5.99",
+      "description": "Crispy rolls stuffed with veggies",
+      "Quantity": "20",
+      "userId": 1,
+      "RestId": 1,
+      "CatId": 1
+    },
+    {
+      "id": "4",
+      "itemname": "Grilled Chicken",
+      "price": "12.99",
+      "description": "Juicy grilled chicken with herbs",
+      "Quantity": "15",
+      "userId": 1,
+      "RestId": 1,
+      "CatId": 2
+    },
+    {
+      "id": "5",
+      "itemname": "Chocolate Cake",
+      "price": "6.99",
+      "description": "Rich and moist chocolate cake",
+      "Quantity": "10",
+      "userId": 1,
+      "RestId": 1,
+      "CatId": 3
+    },
+    {
+      "id": "6",
+      "itemname": "Cheeseburger",
+      "price": "9.99",
+      "description": "Classic cheeseburger with cheddar cheese",
+      "Quantity": "25",
+      "userId": 3,
+      "RestId": 2,
+      "CatId": 4
+    },
+    {
+      "id": "7",
+      "itemname": "Caesar Salad",
+      "price": "7.99",
+      "description": "Fresh salad with Caesar dressing",
+      "Quantity": "30",
+      "userId": 3,
+      "RestId": 2,
+      "CatId": 5
+    }
+  ]
+}

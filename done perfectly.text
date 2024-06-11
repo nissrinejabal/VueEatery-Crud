@@ -1,0 +1,94 @@
+done perfectly
+login + sign up + profile + addrest
+ 
+ +add rest,cat, item , all
+ +update rest, cat  item, all
+ +delete rest, cat  item, all
+
+ show list rest+categories +show items 
+functioning 
++login sign up
+
+
+
+
+
+
+ <button @click="goback">home</button>
+goback() {
+      this.$router.go(-1);
+    },
+    <button @click="gobackhome">home</button>
+    gobackhome() {
+      this.redirectTo({ val: "home" });
+    },
+
+
+    <router-link :to="{ name: 'Menu', params: { RestId: RestId } }">
+      <button @click="viewCategory">menu</button>
+    </router-link>
+    
+    <router-link :to="{ name: 'Menu', params: { RestId: RestId } }">
+      <button @click="gobackMenu">menu</button>
+    </router-link>
+
+    <router-link :to="{ name: 'Menu', params: { RestId: Cat.RestId } }">
+      <button class="Menu-btn">menu</button>
+    </router-link>
+
+    <router-link :to="{ name: 'home', params: { RestId: RestId } }">
+      <button @click="gobackMenu">home</button>
+    </router-link>
+
+
+     <div class="delete-verif">
+        <p>Are you sure you want to delete?</p>
+        <button @click="deleteCategory">Delete</button>
+        <button @click="goback">Go Back</button>
+        <button @click="goBacklistcat">list categories</button>
+      </div>
+          goback() {
+      this.$router.push({
+        name: "Menu",
+        params: { RestId: this.RestId },
+      });
+    },
+    goBacklistcat() {
+      this.$router.push({
+        name: "ShowListCatgoriesComp",
+        params: { RestId: this.RestId },
+      });
+    },
+
+    .input-update-delete-form,
+.selected-items {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.selected-items {
+  width: 109%;
+}
+
+
+
+  userId: parseInt(this.userId, 10), // Ensure userId is correctly assigned
+
+
+
+
+
+
+ila bghiti tfhmi kter go to add new categorycomp
+// Fetch all existing categories
+        const existingCategories = await axios.get(`http://localhost:3000/categories`);
+        
+// Generate a unique ID for the new category
+        const newId = existingCategories.data.length > 0
+          ? parseInt(existingCategories.data[existingCategories.data.length - 1].id) + 1
+          : 1;
+
+ // Add the new category with the generated ID 
+         hadi b9ay tzidiha 9ble hadi  let result = await axios.post(`http://localhost:3000/categories`, {
